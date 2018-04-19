@@ -1,4 +1,5 @@
 //页面初始化
+$("body").height($(window).height());
 $("#main-query").fadeIn(200);
 window.history.replaceState({}, 0, "#query");
 	
@@ -23,9 +24,19 @@ $(window).on("hashchange", (function () {
 			}
 			// 设置当前页为新页
 			page = window.location.hash.slice(1);
+			switch (page) {
+				case "query":
+					$("#background").fadeIn(200);
+					break;
+				case "text":
+					$("#background").fadeOut(200);
+					break;
+				case "audio":
+					$("#background").fadeIn(200);
+			}
+			// 新页淡入
+			$("#main-" + page).fadeIn(200);
 		});
-		// 新页淡入
-		$("#main-" + window.location.hash.slice(1)).fadeIn(200);
 	};
 })());
 
