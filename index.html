@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>时光胶囊 - 百步梯</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+    <!--空区背景-->
+    <img id="background" src="img/bg.png" />
+    <!--组件1-->
+    <div class="main hidden" id="main-query">
+        <div class="msg">你收到了一封来自一年前的信</div>
+        <div class="msg">马上输入兑换码查看吧</div>
+        <div id="input-out-box">
+            <input id="input" type="text" spellcheck="false" />
+        </div>
+        <div id="errmsg"></div>
+        <div id="poll">提交</div>
+    </div>
+    <!--组件2-->
+    <div class="main hidden" id="main-text">
+        <div id="text"></div>
+    </div>
+    <!--组件3-->
+    <div class="main hidden" id="main-audio">
+        <audio id="audio" loop="loop"></audio>
+        <div class="msg">你收到的是一段语音</div>
+        <div class="msg">马上点击播放吧</div>
+        <div id="circle1">
+            <div id="circle2">
+                <div id="circle3">
+                    <div id="play"></div>
+                    <div id="pause" class="hidden"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
