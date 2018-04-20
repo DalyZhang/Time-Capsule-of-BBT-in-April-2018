@@ -1,6 +1,6 @@
 //页面初始化
 $("body").height($(window).height());
-$("#main-query").fadeIn(200);
+$("#main-query").fadeIn(500);
 window.history.replaceState({}, 0, "#query");
 	
 //事件
@@ -8,7 +8,7 @@ $(window).on("hashchange", (function () {
 	var page = "query", audio = document.getElementById("audio");
 	return function () {
 		// 旧页淡出及之后触发的事件
-		$("#main-" + page).fadeOut(200, function () {
+		$("#main-" + page).fadeOut(500, function () {
 			switch (page) {
 				case "query":
 					$("#input").val("");
@@ -35,7 +35,7 @@ $(window).on("hashchange", (function () {
 					$("#background").fadeIn(200);
 			}
 			// 新页淡入
-			$("#main-" + page).fadeIn(200);
+			$("#main-" + page).fadeIn(500);
 		});
 	};
 })());
