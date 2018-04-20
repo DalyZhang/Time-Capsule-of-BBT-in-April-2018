@@ -42,7 +42,9 @@ $(window).on("hashchange", (function () {
 
 //输入文本时转化为大写
 $("#input").on("input", function () {
-	$(this).val($(this).val().toUpperCase());
+	setTimeout(function () {
+		$(this).val($(this).val().toUpperCase());
+	}, 0);
 });
 
 //输入框得到焦点时报错文本消失
