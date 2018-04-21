@@ -23,6 +23,11 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 100%;
+    background-image: url(../img/bg.png);
+    background-size: 100%;
+    background-position: center bottom;
+    background-attachment: fixed;
 }
 
 #main-query {
